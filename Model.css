@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.canvas {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.box {
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.box h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    color: #555;
+}
+
+
+.key-partners {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.key-activities {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.value-propositions {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.customer-relationships {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.customer-segments {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.key-resources {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.channels {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.cost-structure {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.revenue-streams {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}

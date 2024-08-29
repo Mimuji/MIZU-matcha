@@ -1,0 +1,170 @@
+/* Base Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 0;
+    font-weight: bold;
+}
+h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Navigation Links */
+.keywords {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.keywords a {
+    color: green;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Journey Container */
+.journey-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.journey-container.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Step Styling */
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.step.left {
+    animation-name: fadeInLeft;
+}
+
+.step.right {
+    animation-name: fadeInRight;
+}
+
+.step img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Arrow Styling */
+.arrow {
+    font-size: 2em;
+    margin: 0 20px;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.right-arrow {
+    animation-name: fadeInRight;
+}
+
+.left-arrow {
+    animation-name: fadeInLeft;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation Delays */
+#step1 { animation-delay: 0.5s; }
+#arrow1 { animation-delay: 1s; }
+#step2 { animation-delay: 1.5s; }
+#arrow2 { animation-delay: 2s; }
+#step3 { animation-delay: 2.5s; }
+#step4 { animation-delay: 3s; }
+#arrow3 { animation-delay: 3.5s; }
+#step5 { animation-delay: 4s; }
+#arrow4 { animation-delay: 4.5s; }
+#step6 { animation-delay: 5s; }
+#step7 { animation-delay: 5.5s; }
+#arrow5 { animation-delay: 6s; }
+#step8 { animation-delay: 6.5s; }
+#arrow6 { animation-delay: 7s; }
+#step9 { animation-delay: 7.5s; }
+#step10 { animation-delay: 8s; }
+#arrow7 { animation-delay: 8.5s; }
+#step11 { animation-delay: 9s; }
+#arrow8 { animation-delay: 9.5s; }
+#step12 { animation-delay: 10s; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .journey-container {
+        flex-direction: column;
+    }
+
+    .journey-container.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .step {
+        margin-bottom: 20px;
+    }
+}
